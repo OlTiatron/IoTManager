@@ -16,12 +16,14 @@
 # поддерживаемые контроллеры (профили):
 # esp8266_4mb
 # esp32_4mb
+# esp32s2_4mb
 # esp8266_1mb
 # esp8266_1mb_ota
 # esp8285_1mb
 # esp8285_1mb_ota
 # esp8266_2mb
 # esp8266_2mb_ota
+
 
 import configparser
 import os, json, sys, getopt
@@ -205,7 +207,7 @@ with open("platformio.ini", 'w') as configFile:
     config.write(configFile)
     
 # сохраняем применяемый профиль в папку data_svelte для загрузки на контроллер и дальнейшего переиспользования
-print(f"Сохраняем профиль {profile} в {dataDir}")
+print(f"Saving profile {profile} in {dataDir}")
 shutil.copy(profile, dataDir + "/" + profile) 
 
     
@@ -216,10 +218,10 @@ shutil.copy(profile, dataDir + "/" + profile)
 #     ctypes.windll.user32.MessageBoxW(0, "Профиль " + profile + " применен, можно запускать компиляцию и прошивку.", "Операция завершена.", 0)
 
 if update:    
-    print(f"\x1b[1;31;42m Модули профиля " + profile + " обновлены, а сам профиль применен, можно запускать компиляцию и прошивку.\x1b[0m")
+    print(f"\x1b[1;31;42m Profile modules " + profile + " updated, profile applied, you can run compilation and firmware.\x1b[0m")
     
 else:
-    print(f"\x1b[1;31;42m Профиль ", profile, " применен, можно запускать компиляцию и прошивку.\x1b[0m")
+    print(f"\x1b[1;31;42m Profile ", profile, " applied, you can run compilation and firmware.\x1b[0m")
 
 # print(f"\x1b[1;32;41m Операция завершена. \x1b[0m")
 
