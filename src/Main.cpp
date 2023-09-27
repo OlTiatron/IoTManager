@@ -81,7 +81,7 @@ void stopErrorMarker(int id) {
 
 void setup() {
 #ifdef esp32s2_4mb
-    USB.begin();
+    // USB.begin();
 #endif
 #ifdef esp32_4mb
     My_timer = timerBegin(0, 80, true);
