@@ -151,15 +151,15 @@
             },
             {
                 "path": "src/modules/sensors/Bme280",
-                "active": true
+                "active": false
             },
             {
                 "path": "src/modules/sensors/Bmp280",
-                "active": true
+                "active": false
             },
             {
                 "path": "src/modules/sensors/Dht1122",
-                "active": true
+                "active": false
             },
             {
                 "path": "src/modules/sensors/Ds18b20",
@@ -267,7 +267,7 @@
             },
             {
                 "path": "src/modules/sensors/Sht30",
-                "active": true
+                "active": false
             },
             {
                 "path": "src/modules/sensors/Sonar",
@@ -333,7 +333,7 @@
             },
             {
                 "path": "src/modules/exec/Pcf8574",
-                "active": true
+                "active": false
             },
             {
                 "path": "src/modules/exec/Pwm32",
@@ -375,7 +375,7 @@
             },
             {
                 "path": "src/modules/display/Lcd2004",
-                "active": true
+                "active": false
             },
             {
                 "path": "src/modules/display/NextionUpload",
