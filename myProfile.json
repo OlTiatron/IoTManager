@@ -355,13 +355,10 @@
                 "path": "src/modules/exec/Telegram",
                 "active": false
             },
-            {
-                "path": "src/modules/exec/TelegramLT",
-                "active": true
-            },
+            
             {
                 "path": "src/modules/exec/Thermostat",
-                "active": false
+                "active": true
             },
             {
                 "path": "src/modules/sensors/Ds2423",
